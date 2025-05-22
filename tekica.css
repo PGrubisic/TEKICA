@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: antiquewhite;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 214, 198);
+}
+.header p {
+  display: inline;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: xx-large;
+  color: rgba(204, 10, 10, 0.895);
+}
+.naslov {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: xx-large;
+}
+.divide {
+  margin: 0 auto;
+  width: 25%;
+  background-color: rgb(155, 141, 122);
+  height: 2%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  background-image: url(tekica\ slika\ 3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 99%;
+}
+.forma {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  text-shadow: rgb(12, 10, 6) 1px 0 10px;
+}
+.forma input {
+  border-radius: 5px;
+  height: 28px;
+  padding: 5px;
+}
+.ime {
+  font-size: larger;
+  margin: 10px;
+}
+.ime input {
+  margin-left: 37px;
+}
+.passwd {
+  font-size: larger;
+  margin: 10px;
+}
+.passwd input {
+  margin-left: 5px;
+}
+.btn {
+  display: flex;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 5px;
+  justify-content: left;
+  padding: 5px;
+}
+.btn:hover {
+  font-weight: 600;
+}
+.footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 214, 198);
+}
