@@ -1,17 +1,16 @@
-function prijava() {
-  const ime = document.getElementById("ime").value;
-  const passwd = document.getElementById("passwd").value;
+function prijava(event) {
+  event.preventDefault();
 
-  if (ime === "" || passwd === "") {
-    alert("Unesite podatke pravilno.");
+  const ime = document.getElementById("imeInput").value.trim();
+  const lozinka = document.getElementById("lozinkaInput").value.trim();
+
+  if (ime === "Admin" && lozinka === "lozinka") {
+    window.location.href = "dashboard.html";
+  } else if (ime === "" || lozinka === "") {
+    alert("Nisi unio ime ili lozinku");
   } else {
-    console.log("Prijava je uspjesna");
+    alert("Neispravni podaci za prijavu.");
   }
 }
 
-const forma = document.getElementById("formaPrijava");
-formaPrijava.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const formData = new FormData(formaPrijava);
-});
+document.getElementById("formaPrijava").addEventListener("submit", prijava);

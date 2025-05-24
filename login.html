@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tekica.css">
     <script src="tekica.js" defer></script>
-    <title>Tekica</title>
+    <title>Tekica - login</title>
 </head>
 <body>
 <div class="container">
-    <header class="header"><div class="naslov">Dobrodošli u <b><p>T</p>ekicu </b></div>
-            <div class="divide"></div>
+    <header class="header">
+        <div class="naslov">Dobrodošli u <b><p>T</p>ekicu </b></div>
+        <div class="divide"></div>
     </header>
     <main class="main">
         <form action="" id="formaPrijava" class="forma">
 
-            <label class="ime" id="ime">Ime
-                <input type="text" placeholder="Unesite vaše ime">
+            <label class="ime">Ime
+                <input type="text" placeholder="Unesite vaše ime" id="imeInput">
             </label>
 
-            <label class="passwd" id="passwd">Lozinka
-                <input type="password" placeholder="Unesite vašu lozinku">
+            <label class="passwd">Lozinka
+                <input type="password" placeholder="Unesite vašu lozinku" id="lozinkaInput">
             </label>
-            <button type="submit" class="btn" onclick="prijava()">Prijavi se!!!</button>
+            <button type="submit" class="btn">Prijavi se!</button>
         </form>
     </main>
 
