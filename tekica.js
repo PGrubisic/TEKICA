@@ -5,7 +5,7 @@ function prijava(event) {
   const lozinka = document.getElementById("lozinkaInput").value.trim();
 
   if (ime === "Admin" && lozinka === "lozinka") {
-    window.location.href = "dashboard.html";
+    window.location.href = "admin_dashboard.html";
   } else if (ime === "" || lozinka === "") {
     alert("Nisi unio ime ili lozinku");
   } else {
