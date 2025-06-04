@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard.css">
-    <script src="dashboard.js"></script>
+    <script src="dashboard.js" defer></script>
     <title>Tekica - dobrodošli</title>
 </head>
 <body>
 <div class="container">
         <header class="header">
+        <div class="header-top">
         <div class="naslov">Dobrodošli u <b><p>T</p>ekicu </b></div>
-        <div class="divide"></div>
+        <div class="dodajKorisnika"><button id="dodajBtn" class="updateDeleteBtn">Dodaj korisnika</button>
+        </div>
+        </div>
+        <div class="divide" id="divide1"></div>
+        
     </header>
         <main class="main">
-            <button id="btn">Ispiši korisnike</button>
+            <div class ="table-container">
                 <table class="tablica">
                     <thead>
                      <tr class="tablicaNaslov">
@@ -25,13 +30,69 @@
                         <th>Telefon</th>
                         <th>Adresa</th>
                         <th>Porezni broj</th>
+                        <th>Izmjena</th>
+                        <th>Izbriši</th>
                     </tr>
                     </thead>
                     <tbody class="tablicaBody">
 
                     </tbody>
 </table>
-<table class="tablica2"></table>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="" id="formaKorisnik" class="forma">
+        <label ><div class="left-item">Naziv</div>
+            <input type="text" name="naziv" placeholder="naziv" class="right-item">
+        </label>
+        <label><div class="left-item">E-mail</div>
+            <input type="mail" name="mail" placeholder="E-mail" class="right-item">
+        </label>
+        <label ><div class="left-item">Telefon</div>
+            <input type="text" name="telefon" placeholder="Telefon" class="right-item">
+        </label>
+        <label ><div class="left-item">Adresa</div>
+            <input type="text" name="adresa" placeholder="Adresa" class="right-item">
+        </label>
+        
+        <label ><div class="left-item">Porezni broj</div>
+            <input type="text" name="porezni_broj" placeholder="Porezni broj" class="right-item">
+        </label>
+        <button type="submit" id="dodajKorisnika">Dodaj Korisnika</button>
+    </form>
+  </div>
+
+</div>
+
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="" id="formaKorisnik" class="forma">
+        <input type="hidden" name="id" id="updateId">
+        <label ><div class="left-item">Naziv</div>
+            <input type="text" name="naziv" placeholder="naziv" class="right-item">
+        </label>
+        <label><div class="left-item">E-mail</div>
+            <input type="mail" name="mail" placeholder="E-mail" class="right-item">
+        </label>
+        <label ><div class="left-item">Telefon</div>
+            <input type="text" name="telefon" placeholder="Telefon" class="right-item">
+        </label>
+        <label ><div class="left-item">Adresa</div>
+            <input type="text" name="adresa" placeholder="Adresa" class="right-item">
+        </label>
+        
+        <label ><div class="left-item">Porezni broj</div>
+            <input type="text" name="porezni_broj" placeholder="Porezni broj" class="right-item">
+        </label>
+        <button type="submit" id="IzmjeniKorisnika">Izmjeni Korisnika</button>
+    </form>
+  </div>
+
+</div>
+
         </main>
         <footer class="footer">
         <div class="divide"></div>

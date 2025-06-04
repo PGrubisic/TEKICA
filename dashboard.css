@@ -27,15 +27,28 @@ body {
   color: rgba(204, 10, 10, 0.895);
 }
 .naslov {
+  flex: 1;
+  text-align: center;
+  font-size: xx-large;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: xx-large;
+  margin-left: 125px;
 }
 .divide {
   margin: 0 auto;
   width: 25%;
   background-color: rgb(155, 141, 122);
   height: 2%;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between; /* Razmakni elemente lijevo i desno */
+  align-items: center; /* Poravnaj po sredini vertikalno */
+  width: 100%; /* Obavezno da zauzme punu širinu */
+  padding: 10px 20px; /* Malo prostora lijevo/desno */
+}
+#dodajBtn {
+  cursor: pointer;
 }
 
 .main {
@@ -44,13 +57,22 @@ body {
   align-items: center;
   width: 100%;
   height: 75%;
+  background-image: url(tekica\ slika\ 3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.table-container {
+  height: 420px;
+  overflow-y: auto;
 }
 .tablica {
   border: 1px solid black;
   display: none;
+  background-color: rgb(219, 214, 198);
 }
 .tablicaNaslov {
-  font-size: 24px;
+  font-size: 18px;
 }
 .tablicaNaslov th {
   padding: 5px;
@@ -59,10 +81,10 @@ body {
 .tablicaBody td {
   padding: 10px;
   border: 1px solid black;
-  font-size: 20px;
+  font-size: 18px;
 }
 #btn {
-  font-size: 18px;
+  font-size: 16px;
   margin: 5px;
   border-radius: 5px;
   justify-content: left;
@@ -80,4 +102,92 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(219, 214, 198);
+}
+.updateDeleteBtn {
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  justify-content: left;
+  padding: 5px;
+  cursor: pointer;
+}
+.updateDeleteBtn:hover {
+  background-color: rgb(226, 218, 218);
+}
+
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.forma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+.forma label {
+  width: 40%;
+  display: block;
+  padding: 10px;
+}
+.forma input {
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.left-item {
+  display: block;
+  padding: 5px;
+}
+/* .right-item {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+#dodajKorisnika {
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+#dodajKorisnika:hover {
+  font-size: 20px;
+}
+.labela {
+  display: block;
+  text-shadow: 1px 1px 2px black;
 }
