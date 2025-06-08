@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="admin_usluge.js" defer></script>
+  <link rel="stylesheet" href="korisnik.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrator - usluge</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-top">
+        <div class="naslov">Dobrodošli u <b><p>T</p>ekicu </b></div>
+      </div>
+      <div class="divide" id="divide1"></div>
+    </header>
+
+    <button id="dodajBtn" class="updateDeleteBtn">Dodaj uslugu</button>
+
+    <main class="main">
+      <div class="table-container">
+        <table class="tablica">
+          <thead>
+            <tr class="tablicaNaslov">
+              <th>Broj</th>
+              <th>ID</th>
+              <th>Korisnik ID</th>
+              <th>Naziv</th>
+              <th>Trajanje (min)</th>
+              <th>Cijena (KM):</th>
+              <th>Rezervacija</th>
+              <th>Izmjena</th>
+            </tr>
+          </thead>
+          <tbody class="tablicaBody"></tbody>
+        </table>
+      </div>
+
+      <!-- Modal za dodavanje -->
+
+      <div id="modalDodaj" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form action="" id="formaDodaj" class="forma">
+            <label><div class="left-item">Korisnik ID</div>
+              <input type="text" name="korisnik_id" placeholder="Korisnik ID" class="right-item">
+            </label>
+            <label><div class="left-item">Naziv</div>
+              <input type="text" name="naziv" placeholder="Naziv" class="right-item">
+            </label>
+            <label><div class="left-item">Trajanje</div>
+              <input type="text" name="trajanje" placeholder="Trajanje" class="right-item">
+            </label>
+            <label><div class="left-item">Cijena</div>
+              <input type="text" name="cijena" placeholder="Cijena" class="right-item">
+            </label>
+            <button type="submit">Dodaj Uslugu</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal za izmjenu -->
+
+      <div id="modalIzmjeni" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form action="" id="formaizmjenaUsluge" class="forma">
+            <label><div class="left-item">ID</div>
+              <input type="text" name="id" placeholder="ID" class="right-item" readonly>
+            </label>
+            <label><div class="left-item">Korisnik ID</div>
+              <input type="text" name="korisnik_id" placeholder="Korisnik ID" class="right-item">
+            </label>
+            <label><div class="left-item">Naziv</div>
+              <input type="text" name="naziv" placeholder="Naziv" class="right-item">
+            </label>
+            <label><div class="left-item">Trajanje</div>
+              <input type="text" name="trajanje" placeholder="Trajanje" class="right-item">
+            </label>
+            <label><div class="left-item">Cijena</div>
+              <input type="text" name="cijena" placeholder="Cijena" class="right-item">
+            </label>
+            <button type="submit">Izmjeni uslugu</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="divide"></div>
+    </footer>
+  </div>
+</body>
+</html>

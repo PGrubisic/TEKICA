@@ -144,3 +144,6 @@ formaIzmjena.addEventListener("submit", function (event) {
 
   setTimeout(() => location.reload(), 1500);
 });
+function popisUsluga() {
+  window.location.href = "admin_usluge.html";
+}

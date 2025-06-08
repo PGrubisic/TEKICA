@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="korisnik.js" defer></script>
+    <link rel="stylesheet" href="korisnik.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin_dashboard.css">
-    <script src="admin_dashboard.js" defer></script>
-    <title>Tekica - Administrator</title>
+    <title>Tekica - dobrodošli</title>
 </head>
 <body>
 <div class="container">
         <header class="header">
         <div class="header-top">
         <div class="naslov">Dobrodošli u <b><p>T</p>ekicu </b></div>
-        <div class="dodajKorisnika"><button id="dodajBtn" class="updateDeleteBtn">Dodaj korisnika</button>
         </div>
-        </div>
-        <div class="divide" id="divide1"></div>
-        
+        <div class="divide" id="divide1"></div> 
     </header>
         <main class="main">
             <div class ="table-container">
@@ -25,13 +22,12 @@
                      <tr class="tablicaNaslov">
                         <th>Broj</th>
                         <th>ID</th>
+                        <th>Korisnik ID</th>
                         <th>Naziv</th>
-                        <th>E-mail</th>
-                        <th>Telefon</th>
-                        <th>Adresa</th>
-                        <th>Porezni broj</th>
-                        <th>Izmjena</th>
-                        <th>Izbriši</th>
+                        <th>Trajanje (min)</th>
+                        <th>Cijena (KM):</th>
+                        <th>Rezerviraj</th>
+                        
                     </tr>
                     </thead>
                     <tbody class="tablicaBody">
@@ -92,7 +88,7 @@
   </div>
 
 </div>
-<button id="popisUsluga" class="updateDeleteBtn" onclick="popisUsluga()">Popis usluga</button>
+
         </main>
         <footer class="footer">
         <div class="divide"></div>

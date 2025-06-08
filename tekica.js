@@ -6,6 +6,8 @@ function prijava(event) {
 
   if (ime === "Admin" && lozinka === "lozinka") {
     window.location.href = "admin_dashboard.html";
+  } else if (ime === "Korisnik" && lozinka === "korisnik123") {
+    window.location.href = "korisnik_dashboard.html";
   } else if (ime === "" || lozinka === "") {
     alert("Nisi unio ime ili lozinku");
   } else {
